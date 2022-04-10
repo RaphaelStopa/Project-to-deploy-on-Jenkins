@@ -24,7 +24,9 @@ pipeline {
         stage ('Deploy') {
             steps {
                 withMaven(maven : 'maven_3_8_5') {
-                    bat 'mvn deploy'
+                  echo "works"
+//                 I removed this bat for obvious reasons
+//                     bat 'mvn deploy'
                 }
             }
         }
