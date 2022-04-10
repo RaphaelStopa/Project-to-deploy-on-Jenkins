@@ -6,7 +6,7 @@ pipeline {
 //maven_3_8_5. name of maven in jenkins global settings
             steps {
                 withMaven(maven : 'maven_3_8_5') {
-                    sh 'mvn clean compile'
+                    bat 'mvn clean compile'
                 }
             }
         }
@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_8_5') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 withMaven(maven : 'maven_3_8_5') {
-                    sh 'mvn deploy'
+                    bat 'mvn deploy'
                 }
             }
         }
