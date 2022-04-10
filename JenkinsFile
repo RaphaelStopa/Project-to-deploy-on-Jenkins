@@ -1,4 +1,5 @@
 pipeline {
+
     agent any
 
     stages {
@@ -24,9 +25,10 @@ pipeline {
         stage ('Deploy') {
             steps {
                 withMaven(maven : 'maven_3_8_5') {
-                  echo "works"
-//                 I removed this bat for obvious reasons
+//                 I removed this bat for obvious reasons. I don't have a place to send it.
 //                     bat 'mvn deploy'
+//                     I also won't put my credentials to pull the image
+//                     bat 'mvn spring-boot:build-image'
                 }
             }
         }

@@ -38,11 +38,11 @@
 		</plugins>
 	</build>
 
-<!-- 	<distributionManagement> -->
-<!--             <repository> -->
-<!--                 <id>myMavenRepo.write</id> -->
-<!--                 <url>https://mymavenrepo.com/repo/oZhdG5uG567HISWu1y6q/</url> -->
-<!--             </repository> -->
-<!--         </distributionManagement> -->
+	<distributionManagement>
+            <repository>
+                <id>myMavenRepo.write</id>
+                <url>https://mymavenrepo.com/repo/oZhdG5uG567HISWu1y6q/</url>
+            </repository>
+        </distributionManagement>
 
 </project>
