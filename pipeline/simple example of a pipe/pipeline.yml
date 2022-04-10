@@ -1,0 +1,12 @@
+node{
+    stage('build'){
+        bat 'java -version'
+    }
+    stage('test'){
+        git branch: 'main', url: 'https://github.com/RaphaelStopa/Project-to-deploy-on-Jenkins.git'
+        bat 'Java JenkinsTestPipeline'
+    }
+        stage('deploy'){
+        echo "works"
+    }
+}
